@@ -1,0 +1,698 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?gmvv31');
+    src:  url('../fonts/icomoon.eot?gmvv31#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?gmvv31') format('truetype'),
+      url('../fonts/icomoon.woff?gmvv31') format('woff'),
+      url('../fonts/icomoon.svg?gmvv31#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #ff690f;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+}
+
+.wrapper {
+    min-width: 320px;
+}
+
+.holder-header {
+    display: flex;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 0;
+}
+
+.logo {
+    max-width: 90px;
+}
+
+.holder-nav {
+    display: none;
+}
+
+.mountain {
+    background-image: url("../images/bg-sm-all.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.holder-banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.holder-banner h3 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    color: #fefefe;
+    text-transform: uppercase;
+    font-size: 16px;
+    opacity: .6;
+    padding-bottom: 90px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 100px;
+}
+
+.banner p {
+    padding: 12px 0;
+}
+
+.description {
+    width: 50%;
+    color: #fefefe;
+    font-size: 9px;
+}
+
+.description .btn {
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.btn {
+    color: #fff;
+    background-color: 
+    #ff690f;
+    padding: 5px 15px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ff8335;
+}
+
+ .holder-offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+h2 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.offers-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.offers-text span {
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: #565656;
+    padding: 10px 25px;
+}
+
+.holder-offer-blocks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.holder-icon {
+    max-width: 100px;
+    padding: 10px 0;
+}
+
+.holder-text {
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 12px;
+    max-width: 165px;
+}
+
+.holder-text span {
+    padding: 10px 0;
+}
+
+h4 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.holder-gallery {
+    display: none;
+}
+
+.holder-crew {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+.crew-col {
+    width: 50%;
+
+}
+
+.holder-crew-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.crew-icon {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.crew-text {
+    text-align: center;
+}
+
+.crew-text span {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.crew-text p {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.holder-about {
+    padding: 15px 0;
+    background-image: url("../images/bg-2-sm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.holder-about-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.holder-about-text p {
+    color: #2b2b2b;
+    font-size: 12px;
+    padding: 12px 0;
+}
+
+.holder-num {
+    display: flex;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+}
+
+.holder-num p {
+    color: #ff690f;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.holder-num span {
+    font-weight: 600;
+    color: #333;
+    font-size: 12px;
+}
+
+.holder-testimonials {
+    padding: 15px 0;
+    text-align: center;
+
+}
+
+.slider {
+    text-align: center;
+}
+
+.slick-slide img {
+    display: inline-block;
+}
+
+.slider-unit span {
+    display: block;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.slider-unit p {
+    display: inline-block;
+    text-align: center;
+    font-size: 10px;
+    color: #565656;
+    max-width: 50%;
+}
+
+.holder-contacts {
+    display: flex;
+    flex-direction: column;
+    background-color: #2f2f2f;
+}
+
+.contacts {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contacts h2 {
+    margin-bottom: 12px;
+}
+
+.contacts li {
+    padding: 8px 0;
+    list-style: none;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.icon-Instagram:before {
+    content: "\e900";
+}
+.icon-time:before {
+    content: "\e901";
+}
+.icon-mail:before {
+    content: "\e902";
+}
+.icon-call:before {
+    content: "\e903";
+}
+.icon-location:before {
+    content: "\e90a";
+}
+.icon-twitter:before {
+    content: "\e904";
+}
+.icon-fb:before {
+    content: "\e905";
+}
+
+.holder-social {
+    padding: 15px 0;
+}
+
+.holder-social li {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.holder-social i {
+    font-size: 20px;
+    color: #979797;
+}
+
+.map-lg {
+    display: none;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        max-width: 420px;
+    }
+
+    .mountain {
+        background-image: url("../images/bg-md-all.jpg");
+    }
+
+    .banner {
+        padding-top: 150px;
+    }
+
+    .crew-icon {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .mountain {
+        background-image: url("../images/bg-lg-all.jpg");
+    }
+
+    .holder-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .holder-header {
+        align-items: center;
+    }
+
+    .holder-nav {
+        display: block;
+    }
+
+    .holder-nav ul {
+        font-size: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        list-style: none;
+    }
+
+    .holder-nav li {
+        display: inline-block;
+        vertical-align: top;
+        padding: 5px 10px;
+    }
+
+    .holder-nav a {
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: top;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .holder-nav a:hover {
+        color: #dadada;
+    }
+
+    .holder-banner p {
+        text-align: left;
+    }
+
+    .holder-banner-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+        padding-top: 6%;
+        font-size: 12px;
+    }
+
+    .description {
+        font-size: 12px;
+        width: 60%;
+    }
+
+    .description .btn {
+        margin: 10px 0 20px;
+    }
+
+    .holder-img-boarder {
+        display: block;
+        max-width: 58%;
+    }
+
+    .banner {
+        padding-top: 240px;
+        padding-bottom: 100px;
+    }
+
+    .banner p {
+        padding: 33px 0;
+    }
+
+    .btn {
+        padding: 7px 17px;
+        font-size: 12px;
+    }
+
+    .holder-offer {
+        padding: 30px 0;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .offers-text span {
+        font-size: 13px;
+        line-height: 1.6;
+        padding: 10px 40px;
+    }
+
+    .holder-offer-blocks {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        margin: 0 -15px;
+    }
+
+    .offer-block {
+        padding: 0 15px;
+
+    }
+
+    .crew-icon {
+        width: 200px;
+        height: 200px;
+    }
+
+    #slider-gallery {
+        display: none;
+    }
+
+    .holder-gallery {
+        display: flex;
+    }
+
+    .holder-crew {
+        padding: 30px 0;
+    }
+
+    .crew-col {
+        width: 50%;
+    }
+
+    .holder-about {
+        padding: 30px 0;
+    }
+
+    .holder-about-text {
+        width: 58%;
+        text-align: left;
+    }
+
+    .holder-num p {
+        font-size: 30px;
+    }
+
+    .holder-testimonials {
+        padding: 30px 0;
+    }
+
+    .contacts {
+        padding: 20px 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 990px;
+    }
+
+    .banner {
+        padding-top: 275px;
+        padding-bottom: 125px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .holder-about {
+        background-image: url("../images/bg-2-lg.jpg");
+    }
+
+    .holder-about-text {
+        padding: 60px 0 100px;
+    }
+
+    .holder-about-text h2 {
+        margin-bottom: 20px;
+    }
+
+    .holder-about-text p {
+        font-size: 14px;
+    }
+
+    .holder-num p {
+        font-size: 14px;
+        font-size: 30px;
+    }
+
+    .holder-num span {
+        font-size: 14px;
+    }
+
+    .item {
+        padding-right: 30px;
+    }
+
+    .holder-offer {
+        padding: 100px 0;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    .offers-text span {
+        font-size: 15px;
+    }
+
+    .holder-offer-blocks {
+        padding: 20px 0;
+    }
+
+    .holder-crew {
+        padding: 100px 0;
+    }
+
+    .crew-col {
+        width: 25%;
+        padding: 0 25px;
+    }
+
+    .holder-testimonials {
+        padding: 100px 0;
+    }
+
+    .contacts-localion {
+        display: flex;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        width: 33.33%;
+        padding: 30px 50px 0;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .map-lg {
+        display: block;
+        width: 66.66%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        width: 33.33%;
+        padding: 30px 100px 0;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    /* .banner {
+        top: 80%;
+    }
+
+    .holder-banner p {
+        padding: 20px 0;
+    } */
+}
+
+
+
+    
+
+
