@@ -38,11 +38,6 @@ body {
     color: #333;
 }
 
-.container {
-    max-width: 350px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
 
 img {
     max-width: 100%;
@@ -51,39 +46,20 @@ img {
     height: auto;
 }
 
-.wrapper {
-    min-width: 320px;
-}
-
 .holder-header {
-    display: flex;
     position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 0;
-}
-
-.logo {
-    max-width: 90px;
-}
-
-.holder-nav {
-    display: none;
+    padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .mountain {
-    background-image: url("../images/bg-sm-all.jpg");
+    background-image: url("../images/bg-lg-all.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .holder-banner {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .holder-banner h3 {
@@ -91,16 +67,16 @@ img {
     font-weight: 900;
     color: #fefefe;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1rem;
     opacity: .6;
-    padding-bottom: 90px;
+    padding-bottom: 6rem;
 }
 
 .banner {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-top: 100px;
+    padding-top: 6.25rem;
 }
 
 .banner p {
@@ -110,22 +86,22 @@ img {
 .description {
     width: 50%;
     color: #fefefe;
-    font-size: 9px;
+    font-size: 0.75rem;
 }
 
 .description .btn {
     vertical-align: top;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .btn {
     color: #fff;
     background-color: 
     #ff690f;
-    padding: 5px 15px;
+    padding: 0.32rem 1.25rem;
+    font-size: 1rem;
     font-family: 'Catamaran', sans-serif;
     font-weight: 400;
-    font-size: 10px;
     text-transform: uppercase;
     border: none;
     border-radius: 3px;
@@ -136,56 +112,41 @@ img {
     background-color: #ff8335;
 }
 
- .holder-offer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
+.holder-offer {
+    padding: 6.25rem 0;
 }
 
 h2 {
     font-family: 'Catamaran', sans-serif;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 2.125rem;
     text-transform: uppercase;
 }
 
 .offers-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
 .offers-text span {
     font-family: 'Muli', sans-serif;
     font-weight: 400;
-    font-size: 11px;
     color: #565656;
-    padding: 10px 25px;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .holder-offer-blocks {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 0;
+    justify-content: center;
+    padding: 1.25rem 0;
 }
 
 figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
+    padding: 2.625rem 0;
 }
 
 .holder-icon {
-    max-width: 100px;
-    padding: 10px 0;
+    max-width: 6.25rem;
+    padding: 0.625rem 0;
 }
 
 .holder-text {
@@ -193,12 +154,12 @@ figure {
     font-family: 'Muli', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 12px;
-    max-width: 165px;
+    font-size: 0.75rem;
+    max-width: 10.3rem;
 }
 
 .holder-text span {
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 h4 {
@@ -206,8 +167,8 @@ h4 {
     font-weight: 800;
     text-transform: uppercase;
     color: #333;
-    font-size: 14px;
-    padding: 10px 0;
+    font-size: 0.875rem;
+    padding: 0.625rem 0;
 }
 
 .holder-gallery {
@@ -220,28 +181,13 @@ h4 {
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    padding: 15px 0;
-}
-
-.crew-col {
-    width: 50%;
-
-}
-
-.holder-crew-icon {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
+    padding: 6.25rem 0;
 }
 
 .crew-icon {
     border-radius: 100%;
-    width: 100px;
-    height: 100px;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .crew-text {
@@ -250,7 +196,7 @@ h4 {
 
 .crew-text span {
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .crew-text p {
@@ -260,7 +206,7 @@ h4 {
 }
 
 .holder-about {
-    padding: 15px 0;
+    padding: 1rem 0;
     background-image: url("../images/bg-2-sm.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -401,33 +347,12 @@ h4 {
 }
 
 @media screen and (min-width: 480px) {
-    .container {
-        max-width: 420px;
-    }
-
-    .mountain {
-        background-image: url("../images/bg-md-all.jpg");
-    }
-
     .banner {
         padding-top: 150px;
-    }
-
-    .crew-icon {
-        width: 150px;
-        height: 150px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-
-    .mountain {
-        background-image: url("../images/bg-lg-all.jpg");
-    }
-
     .holder-top {
         display: flex;
         flex-direction: column;
@@ -481,11 +406,6 @@ h4 {
         font-size: 12px;
     }
 
-    .description {
-        font-size: 12px;
-        width: 60%;
-    }
-
     .description .btn {
         margin: 10px 0 20px;
     }
@@ -509,51 +429,12 @@ h4 {
         font-size: 12px;
     }
 
-    .holder-offer {
-        padding: 30px 0;
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-
-    .offers-text span {
-        font-size: 13px;
-        line-height: 1.6;
-        padding: 10px 40px;
-    }
-
-    .holder-offer-blocks {
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 20px 0;
-        margin: 0 -15px;
-    }
-
-    .offer-block {
-        padding: 0 15px;
-
-    }
-
-    .crew-icon {
-        width: 200px;
-        height: 200px;
-    }
-
     #slider-gallery {
         display: none;
     }
 
     .holder-gallery {
         display: flex;
-    }
-
-    .holder-crew {
-        padding: 30px 0;
-    }
-
-    .crew-col {
-        width: 50%;
     }
 
     .holder-about {
@@ -579,10 +460,6 @@ h4 {
 }
 
 @media screen and (min-width: 1024px) {
-    .container {
-        max-width: 990px;
-    }
-
     .banner {
         padding-top: 275px;
         padding-bottom: 125px;
@@ -620,31 +497,6 @@ h4 {
 
     .item {
         padding-right: 30px;
-    }
-
-    .holder-offer {
-        padding: 100px 0;
-    }
-
-    h2 {
-        font-size: 34px;
-    }
-
-    .offers-text span {
-        font-size: 15px;
-    }
-
-    .holder-offer-blocks {
-        padding: 20px 0;
-    }
-
-    .holder-crew {
-        padding: 100px 0;
-    }
-
-    .crew-col {
-        width: 25%;
-        padding: 0 25px;
     }
 
     .holder-testimonials {
