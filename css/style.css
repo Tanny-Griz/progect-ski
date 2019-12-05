@@ -46,20 +46,32 @@ img {
     height: auto;
 }
 
-.holder-header {
+header {
     position: absolute;
+}
+
+.holder-header {
     padding-top: 2.5rem;
     margin-bottom: 2.5rem;
+    z-index: 2;
+}
+
+.nav {
+    display: none;
 }
 
 .mountain {
     background-image: url("../images/bg-lg-all.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 56.25%;
 }
 
 .holder-banner {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(50%);
 }
 
 .holder-banner h3 {
@@ -70,17 +82,6 @@ img {
     font-size: 1rem;
     opacity: .6;
     padding-bottom: 6rem;
-}
-
-.banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-top: 6.25rem;
-}
-
-.banner p {
-    padding: 12px 0;
 }
 
 .description {
@@ -112,19 +113,11 @@ img {
     background-color: #ff8335;
 }
 
-.holder-offer {
-    padding: 6.25rem 0;
-}
-
 h2 {
     font-family: 'Catamaran', sans-serif;
     font-weight: 800;
     font-size: 2.125rem;
     text-transform: uppercase;
-}
-
-.offers-text {
-    text-align: center;
 }
 
 .offers-text span {
@@ -135,18 +128,12 @@ h2 {
     line-height: 1.6;
 }
 
-.holder-offer-blocks {
-    justify-content: center;
-    padding: 1.25rem 0;
-}
-
 figure {
-    padding: 2.625rem 0;
+    padding: 1rem 0;
 }
 
 .holder-icon {
-    max-width: 6.25rem;
-    padding: 0.625rem 0;
+    text-align: center;
 }
 
 .holder-text {
@@ -155,7 +142,6 @@ figure {
     font-weight: 300;
     text-transform: uppercase;
     font-size: 0.75rem;
-    max-width: 10.3rem;
 }
 
 .holder-text span {
@@ -177,21 +163,26 @@ h4 {
 
 .holder-crew {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    padding: 6.25rem 0;
+}
+
+.holder-crew h2 {
+    margin-bottom: 2rem;
 }
 
 .crew-icon {
     border-radius: 100%;
     overflow: hidden;
     margin-bottom: 0.625rem;
+    max-width: 15rem;
+    margin: 0 auto;
 }
 
 .crew-text {
     text-align: center;
+    padding: 1rem 0;
 }
 
 .crew-text span {
@@ -206,53 +197,40 @@ h4 {
 }
 
 .holder-about {
-    padding: 1rem 0;
     background-image: url("../images/bg-2-sm.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.holder-about-text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 15px 0;
+.holder-about-text h2 {
+    margin-bottom: 1.25rem;
 }
 
 .holder-about-text p {
-    color: #2b2b2b;
-    font-size: 12px;
-    padding: 12px 0;
+    font-size: 0.875rem;
 }
 
-.holder-num {
-    display: flex;
-
-}
-
-.item {
-    display: flex;
-    flex-direction: column;
-    padding-right: 15px;
-}
-
-.holder-num p {
+.holder-num strong {
     color: #ff690f;
     font-family: 'Catamaran', sans-serif;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 1.875rem;
 }
 
 .holder-num span {
     font-weight: 600;
     color: #333;
-    font-size: 12px;
+    font-size: 0.875rem;
+}
+
+.holder-about-text p {
+    color: #2b2b2b;
+    font-size: 0.75rem;
+    padding: 0.75rem 0;
 }
 
 .holder-testimonials {
-    padding: 15px 0;
     text-align: center;
-
 }
 
 .slider {
@@ -279,31 +257,42 @@ h4 {
     max-width: 50%;
 }
 
-.holder-contacts {
-    display: flex;
-    flex-direction: column;
+footer {
     background-color: #2f2f2f;
 }
 
 .contacts {
     color: #fff;
     font-weight: 300;
+    padding: 1.2rem 0 0 2.4rem;
 }
 
 .contacts h2 {
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
 }
 
 .contacts li {
-    padding: 8px 0;
+    padding: 0.5rem 0;
     list-style: none;
 }
 
 .contacts a {
     text-decoration: none;
     color: #fff;
-    font-size: 14px;
+    font-size: 0.875rem;
     cursor: pointer;
+}
+
+.holder-social ul {
+    display: flex;
+}
+
+.holder-social ul li {
+    padding-right: 10px;
+}
+
+.holder-crew, .holder-testimonials, .holder-offer, .holder-about-text, .holder-about {
+    padding: 2rem 0;
 }
 
 .icon-Instagram:before {
@@ -328,68 +317,21 @@ h4 {
     content: "\e905";
 }
 
-.holder-social {
-    padding: 15px 0;
-}
-
-.holder-social li {
-    display: inline-block;
-    padding-right: 15px;
-}
-
-.holder-social i {
-    font-size: 20px;
-    color: #979797;
-}
-
-.map-lg {
-    display: none;
-}
-
-@media screen and (min-width: 480px) {
-    .banner {
-        padding-top: 150px;
-    }
-}
-
 @media screen and (min-width: 768px) {
-    .holder-top {
+    .nav {
         display: flex;
-        flex-direction: column;
     }
 
-    .holder-header {
-        align-items: center;
-    }
-
-    .holder-nav {
-        display: block;
-    }
-
-    .holder-nav ul {
-        font-size: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        align-items: flex-end;
-        list-style: none;
-    }
-
-    .holder-nav li {
-        display: inline-block;
-        vertical-align: top;
-        padding: 5px 10px;
-    }
-
-    .holder-nav a {
-        text-decoration: none;
-        display: inline-block;
-        vertical-align: top;
+    .holder-header .nav-item a {
         color: #fff;
-        font-size: 12px;
+        font-size: 1rem;
     }
 
-    .holder-nav a:hover {
+    .holder-crew, .holder-testimonials, .holder-offer, .holder-about-text, .holder-about {
+        padding: 4rem 0;
+    }
+
+    .holder-header .nav-item a:hover {
         color: #dadada;
     }
 
@@ -415,13 +357,8 @@ h4 {
         max-width: 58%;
     }
 
-    .banner {
-        padding-top: 240px;
-        padding-bottom: 100px;
-    }
-
-    .banner p {
-        padding: 33px 0;
+    .contacts {
+        padding: 4rem 0 0 6rem;
     }
 
     .btn {
@@ -436,35 +373,9 @@ h4 {
     .holder-gallery {
         display: flex;
     }
-
-    .holder-about {
-        padding: 30px 0;
-    }
-
-    .holder-about-text {
-        width: 58%;
-        text-align: left;
-    }
-
-    .holder-num p {
-        font-size: 30px;
-    }
-
-    .holder-testimonials {
-        padding: 30px 0;
-    }
-
-    .contacts {
-        padding: 20px 50px;
-    }
 }
 
 @media screen and (min-width: 1024px) {
-    .banner {
-        padding-top: 275px;
-        padding-bottom: 125px;
-    }
-
     .btn {
         padding: 10px 20px;
         font-size: 15px;
@@ -472,76 +383,17 @@ h4 {
 
     .holder-about {
         background-image: url("../images/bg-2-lg.jpg");
+        padding: 12rem 0;
     }
 
-    .holder-about-text {
-        padding: 60px 0 100px;
+    .holder-crew, .holder-testimonials, .holder-offer {
+        padding: 6.25rem 0;
     }
 
-    .holder-about-text h2 {
-        margin-bottom: 20px;
-    }
-
-    .holder-about-text p {
-        font-size: 14px;
-    }
-
-    .holder-num p {
-        font-size: 14px;
-        font-size: 30px;
-    }
-
-    .holder-num span {
-        font-size: 14px;
-    }
-
-    .item {
-        padding-right: 30px;
-    }
-
-    .holder-testimonials {
-        padding: 100px 0;
-    }
-
-    .contacts-localion {
-        display: flex;
-    }
-
-    .contacts {
-        display: flex;
-        flex-direction: column;
-        width: 33.33%;
-        padding: 30px 50px 0;
-    }
-
-    .map {
-        display: none;
-    }
-
-    .map-lg {
-        display: block;
-        width: 66.66%;
-    }
 }
 
-@media screen and (min-width: 1300px) {
-    .contacts {
-        display: flex;
-        flex-direction: column;
-        width: 33.33%;
-        padding: 30px 100px 0;
-    }
-}
 
-@media screen and (min-width: 1600px) {
-    /* .banner {
-        top: 80%;
-    }
 
-    .holder-banner p {
-        padding: 20px 0;
-    } */
-}
 
 
 
