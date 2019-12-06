@@ -48,12 +48,14 @@ img {
 
 header {
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .holder-header {
     padding-top: 2.5rem;
     margin-bottom: 2.5rem;
-    z-index: 2;
 }
 
 .nav {
