@@ -1,426 +1,366 @@
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?gmvv31');
-    src:  url('../fonts/icomoon.eot?gmvv31#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?gmvv31') format('truetype'),
-      url('../fonts/icomoon.woff?gmvv31') format('woff'),
-      url('../fonts/icomoon.svg?gmvv31#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    color: #ff690f;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?gmvv31");
+  src: url("../fonts/icomoon.eot?gmvv31#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?gmvv31") format("truetype"), url("../fonts/icomoon.woff?gmvv31") format("woff"), url("../fonts/icomoon.svg?gmvv31#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #ff690f;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 body {
-    font-family: 'Muli', sans-serif;
-    color: #333;
-}
+  font-family: 'Muli', sans-serif;
+  color: #333; }
 
 img {
-    max-width: 100%;
-    display: inline-block;
-    vertical-align: top;
-    height: auto;
-}
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  height: auto; }
 
 .wrapper {
-    min-width: 320px;
-}
+  min-width: 320px; }
+
+.container {
+  padding: 0 3rem; }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 2rem; } }
 
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-}
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; }
 
 .logo {
-    display: block;
-}
+  display: block;
+  width: 60px; }
+  @media screen and (min-width: 768px) {
+    .logo {
+      width: 5rem; } }
+  @media screen and (min-width: 1024px) {
+    .logo {
+      width: 8.5rem; } }
 
 .holder-header {
-    padding-top: 2.5rem;
-    margin-bottom: 2.5rem;
-}
+  padding-top: 1rem; }
+  @media screen and (min-width: 768px) {
+    .holder-header {
+      padding-top: 1rem; }
+      .holder-header a {
+        color: #fff;
+        font-size: 0.9rem; }
+        .holder-header a:hover {
+          color: #dadada; } }
+  @media screen and (min-width: 1024px) {
+    .holder-header {
+      padding-top: 1.6rem; } }
 
 .nav {
-    display: none;
-}
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .nav {
+      display: flex; } }
+
+@media screen and (min-width: 768px) {
+  .nav-link {
+    padding: .5rem 0.5rem; } }
 
 .mountain {
-    background-image: url("../images/bg-md-all.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 0;
-    min-height: 13rem;
-}
+  background-image: url("../images/bg-md-all.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: 13rem;
+  display: flex;
+  align-items: center;
+  padding-top: 15%; }
+  @media screen and (min-width: 768px) {
+    .mountain {
+      padding-top: 20%;
+      background-image: url("../images/bg-lg-all.jpg");
+      min-height: 27.4rem; } }
+  @media screen and (min-width: 1024px) {
+    .mountain {
+      min-height: 35.4rem; } }
 
 .holder-banner {
-    position: relative;
-}
-
-.holder-banner h3 {
+  padding: 20px 0; }
+  .holder-banner h3 {
     font-family: 'Catamaran', sans-serif;
     font-weight: 900;
     color: #fefefe;
     text-transform: uppercase;
     font-size: 1rem;
     opacity: .6;
-    padding-bottom: 6rem;
-}
+    padding-bottom: 6rem; }
+  @media screen and (min-width: 768px) {
+    .holder-banner p {
+      text-align: left; } }
 
-.description {
-    width: 36%;
-    top: 50%;
-    left: 0;
-    position: absolute;
-    color: #fefefe;
-    font-size: 0.4rem;
-}
-
-.description .btn {
-    vertical-align: top;
-}
-
-.btn {
-    color: #fff;
-    background-color: 
-    #ff690f;
-    padding: 0.26rem 0.85rem;
-    font-size: 0.4rem;
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #ff8335;
-}
-
-h2 {
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 800;
-    font-size: 2.125rem;
-    text-transform: uppercase;
-}
-
-.offers-text span {
-    font-family: 'Muli', sans-serif;
-    font-weight: 400;
-    color: #565656;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-figure {
-    padding: 1rem 0;
-}
-
-.holder-text {
-    font-family: 'Muli', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-}
-
-.holder-text span {
-    padding: 0.625rem 0;
-}
-
-h4 {
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #333;
-    font-size: 0.875rem;
-    padding: 0.625rem 0;
-}
-
-.holder-gallery {
-    display: none;
-}
-
-.holder-crew {
+@media screen and (min-width: 768px) {
+  .holder-banner-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    align-items: flex-start;
+    width: 50%;
+    padding-top: 6%;
+    font-size: 12px; } }
 
-.holder-crew h2 {
-    margin-bottom: 2rem;
-}
+.description {
+  color: #fefefe;
+  font-size: 0.4rem; }
+  @media screen and (min-width: 768px) {
+    .description {
+      font-size: 0.75rem; }
+      .description .btn {
+        margin: 0.625rem 0 1.25rem; } }
+  .description .btn {
+    margin: 0.4rem 0 1rem; }
+
+.btn {
+  color: #fff;
+  background-color: #ff690f;
+  padding: 0.26rem 0.85rem;
+  font-size: 0.4rem;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: #ff8335; }
+  @media screen and (min-width: 768px) {
+    .btn {
+      padding: 0.32rem 1.25rem;
+      font-size: 0.9rem; } }
+  @media screen and (min-width: 1024px) {
+    .btn {
+      font-size: 1rem; } }
+
+@media screen and (min-width: 768px) {
+  section header {
+    margin-bottom: 3.5rem; } }
+section h2 {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-transform: uppercase; }
+  @media screen and (min-width: 768px) {
+    section h2 {
+      font-size: 2.125rem; } }
+section span {
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  color: #565656;
+  font-size: 0.9rem;
+  line-height: 1.5; }
+  @media screen and (min-width: 768px) {
+    section span {
+      font-size: 1rem;
+      line-height: 1.6; } }
+
+figure {
+  padding: 1rem 0;
+  width: 50%;
+  margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    figure {
+      width: 80%; } }
+  @media screen and (min-width: 1024px) {
+    figure {
+      width: 100%; } }
+
+.holder-text {
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 0.75rem; }
+  .holder-text span {
+    padding: 0.625rem 0; }
+
+h4 {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 0.875rem;
+  padding: 0.625rem 0; }
+
+.holder-gallery {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .holder-gallery {
+      display: flex; } }
+
+.holder-crew {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .holder-crew figure {
+    width: 100%; }
 
 .crew-icon {
-    border-radius: 100%;
-    overflow: hidden;
-    margin-bottom: 0.625rem;
-    max-width: 15rem;
-    margin: 0 auto;
-}
+  border-radius: 100%;
+  overflow: hidden;
+  margin-bottom: 0.625rem;
+  max-width: 15rem;
+  margin: 0 auto; }
 
 .crew-text {
-    text-align: center;
-    padding: 1rem 0;
-}
-
-.crew-text span {
+  text-align: center;
+  padding: 1rem 0; }
+  .crew-text span {
     text-transform: uppercase;
-    font-size: 0.75rem;
-}
-
-.crew-text p {
+    font-size: 0.75rem; }
+  .crew-text p {
     font-family: 'Catamaran', sans-serif;
     font-weight: 800;
-    text-transform: uppercase;
-}
+    text-transform: uppercase; }
 
 .about {
-    background-image: url("../images/bg-2-sm.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 0;
-    min-height: 13rem;
-}
+  background-image: url("../images/bg-2-sm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+  min-height: 13rem; }
+  @media screen and (min-width: 768px) {
+    .about {
+      background-image: url("../images/bg-2-lg.jpg");
+      min-height: 36.87rem; } }
+
+.holder-about {
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .holder-about {
+      text-align: left; } }
+  .holder-about p {
+    font-size: 0.9rem; }
+    @media screen and (min-width: 768px) {
+      .holder-about p {
+        font-size: 1rem; } }
 
 .content h2 {
-    margin-bottom: 1.7rem;
-}
+  margin-bottom: 1.7rem; }
 
 .text {
-    margin-bottom: 3.5rem;
-}
+  margin-bottom: 3.5rem; }
 
 .item strong {
-    color: #ff690f;
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 800;
-    font-size: 1.875rem;
-}
-
+  color: #ff690f;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem; }
+  @media screen and (min-width: 768px) {
+    .item strong {
+      font-size: 1.9rem; } }
 .item span {
-    font-weight: 600;
-    color: #333;
-    font-size: 0.875rem;
-}
+  font-weight: 600;
+  color: #333;
+  font-size: 0.875rem; }
 
 .slider {
-    text-align: center;
-}
+  text-align: center; }
 
 .slick-slide img {
-    display: inline-block;
-}
+  display: inline-block; }
 
 .slider-unit span {
-    display: block;
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 10px;
-}
-
+  display: block;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 10px; }
 .slider-unit p {
-    display: inline-block;
-    text-align: center;
-    font-size: 0.8rem;
-    color: #565656;
-    max-width: 50%;
-}
+  display: inline-block;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #565656;
+  max-width: 50%; }
+  @media screen and (min-width: 768px) {
+    .slider-unit p {
+      font-size: 1rem; } }
+
+@media screen and (min-width: 768px) {
+  #slider-gallery {
+    display: none; } }
 
 footer {
-    background-color: #2f2f2f;
-}
+  background-color: #2f2f2f; }
 
 .contacts {
-    color: #fff;
-    font-weight: 300;
-    padding: 1.2rem 0 0 2.4rem;
-}
-
-.contacts h2 {
-    margin-bottom: 1rem;
-}
-
-.contacts li {
+  color: #fff;
+  font-weight: 300;
+  padding: 1.2rem 1.2rem 0 2.4rem; }
+  @media screen and (min-width: 768px) {
+    .contacts {
+      padding: 4rem 0 0 3.6rem; } }
+  .contacts h2 {
+    margin-bottom: 1rem; }
+  .contacts li {
     padding: 0.5rem 0;
-    list-style: none;
-}
-
-.contacts a {
+    list-style: none; }
+  .contacts a {
     text-decoration: none;
     color: #fff;
     font-size: 0.875rem;
-    cursor: pointer;
-}
+    cursor: pointer; }
 
 .holder-social ul {
-    display: flex;
-}
-
-.holder-social ul li {
-    padding-right: 10px;
-}
-
-.holder-crew, .testimonials, .holder-offer, .holder-about {
-    padding: 2rem 0;
-}
+  display: flex; }
+.holder-social li {
+  padding-right: 10px; }
 
 .footer-map {
-    display: inline-block;
-}
+  display: inline-block; }
+
+.holder-crew, .testimonials, .holder-offer, .holder-about {
+  padding: 2rem 0; }
+  @media screen and (min-width: 768px) {
+    .holder-crew, .testimonials, .holder-offer, .holder-about {
+      padding: 4rem 0; } }
+  @media screen and (min-width: 1024px) {
+    .holder-crew, .testimonials, .holder-offer, .holder-about {
+      padding: 6.25rem 0; } }
 
 .icon-Instagram:before {
-    content: "\e900";
-}
+  content: "\e900"; }
+
 .icon-time:before {
-    content: "\e901";
-}
+  content: "\e901"; }
+
 .icon-mail:before {
-    content: "\e902";
-}
+  content: "\e902"; }
+
 .icon-call:before {
-    content: "\e903";
-}
+  content: "\e903"; }
+
 .icon-location:before {
-    content: "\e90a";
-}
+  content: "\e90a"; }
+
 .icon-twitter:before {
-    content: "\e904";
-}
+  content: "\e904"; }
+
 .icon-fb:before {
-    content: "\e905";
-}
+  content: "\e905"; }
 
-@media screen and (min-width: 768px) {
-    .nav {
-        display: flex;
-    }
-
-    .mountain {
-        background-image: url("../images/bg-lg-all.jpg");
-        min-height: 27.4rem;
-    }
-
-    .holder-header .nav-item a {
-        color: #fff;
-        font-size: 1rem;
-    }
-
-    .about {
-        background-image: url("../images/bg-2-lg.jpg");
-        min-height: 36.87rem;
-    }
-
-    .holder-crew, .holder-offer, .holder-about, .testimonials {
-        padding: 4rem 0;
-    }
-
-    .holder-header .nav-item a:hover {
-        color: #dadada;
-    }
-
-    .holder-banner p {
-        text-align: left;
-    }
-
-    .holder-banner-text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 50%;
-        padding-top: 6%;
-        font-size: 12px;
-    }
-
-    .description {
-        font-size: 0.75rem;
-    }
-
-    .description .btn {
-        margin: 0.625rem 0 1.25rem;
-    }
-
-    .holder-img-boarder {
-        display: block;
-        max-width: 58%;
-    }
-
-    .slider-unit p {
-        font-size: 1rem;
-    }
-
-    .contacts {
-        padding: 4rem 0 0 6rem;
-    }
-
-    .btn {
-        padding: 0.32rem 1.25rem;
-        font-size: 0.9rem;
-    }
-
-    #slider-gallery {
-        display: none;
-    }
-
-    .holder-gallery {
-        display: flex;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .mountain {
-        background-image: url("../images/bg-lg-all.jpg");
-        min-height: 35.4rem;
-    }
-
-    .btn {
-        font-size: 1rem;
-    }
-
-    .holder-crew, .holder-testimonials, .holder-offer, .testimonials, .holder-about {
-        padding: 6.25rem 0;
-    }
-
-}
-
-@media screen and (min-width: 1200px) {
-    .mountain {
-        min-height: 56rem;
-    }
-}
-
-
-
-
-
-
-
-
-    
-
-
+/*# sourceMappingURL=style.css.map */
