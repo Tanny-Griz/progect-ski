@@ -234,6 +234,8 @@ h4 {
   align-items: center; }
   .holder-crew figure {
     width: 100%; }
+  .holder-crew .col {
+    flex-basis: auto; }
 
 .crew-icon {
   border-radius: 100%;
