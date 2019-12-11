@@ -45,7 +45,7 @@ img {
 }
 
 .wrapper {
-    min-width: 320px;
+    min-width: 20rem;
 }
 
 .container {
@@ -65,7 +65,7 @@ header {
 
 .logo {
     display: block;
-    width: 60px;
+    width: 3.75rem;
     @media screen and (min-width: 768px) {
         width: 5rem;
     }
@@ -139,7 +139,7 @@ header {
 }
 
 .holder-banner {
-    padding: 20px 0;
+    padding: 1.25rem 0;
     h3 {
         font-family: 'Catamaran', sans-serif;
         font-weight: 900;
@@ -150,8 +150,12 @@ header {
         padding-bottom: 6rem;
     }
     @media screen and (min-width: 768px) {
-    p {
-        text-align: left;
+        p {
+            text-align: left;
+            font-size: .8rem;
+            @media screen and (min-width: 1024px) {
+                font-size: 1rem;
+            }
         }  
     }
 }
@@ -163,7 +167,7 @@ header {
         align-items: flex-start;
         width: 50%;
         padding-top: 6%;
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 }
 
@@ -171,10 +175,11 @@ header {
     color: #fefefe;
     padding-top: 25%;
     font-size: 0.4rem;
-    width: 36%;
+    width: 40%;
     @media screen and (min-width: 768px) {
         padding-top: 15%;
         font-size: 0.75rem;
+        width: 50%;
         .btn {
             margin: 0.625rem 0 1.25rem;
         }
@@ -377,7 +382,7 @@ h4 {
         font-family: 'Catamaran', sans-serif;
         font-weight: 800;
         text-transform: uppercase;
-        font-size: 10px;
+        font-size: 0.63rem;
     }
     p {
         display: inline-block;
@@ -397,8 +402,21 @@ h4 {
     }
 }
 
+
 footer {
     background-color: #2f2f2f;
+}
+
+.holder-contacts {
+    
+}
+
+.map {
+    background-image: url('../images/map-lg.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 18.75rem;
 }
 
 .contacts {
@@ -406,7 +424,8 @@ footer {
     font-weight: 300;
     padding: 1.2rem 1.2rem 0 2.4rem;
     @media screen and (min-width: 768px) {
-        padding: 4rem 0 0 3.6rem;
+        padding: 4rem 1.2rem 0
+         3.6rem;
     }
 
     h2 {
@@ -429,14 +448,11 @@ footer {
         display: flex;
     }
     li {
-        padding-right: 10px;
+        padding-right: 0.625rem;
     }
-}
-
-.footer-map {
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
+    i {
+        font-size: 1.3rem;
+    }
 }
 
 .holder-crew, .testimonials, .holder-offer, .holder-about {
